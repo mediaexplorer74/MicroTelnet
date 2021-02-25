@@ -1,6 +1,12 @@
 ﻿TELNET Injector (Experimental Project for Microsoft Lumia 950)
 ================================================================
 
+![screenshot1](shot1.png "screenshot1")
+![screenshot2](shot2.png "screenshot2")
+![screenshot3](shot3.png "screenshot3")
+![screenshot4](shot4.png "screenshot4")
+
+
 My TELNET Injector "solution" consists of 2 parts:
 A. Backend
 B. Frontend
@@ -33,6 +39,8 @@ Please, help (if You know Sockets, TCP Clients, etc.).
 Github repo here:
  https://github.com/mediaexplorer74/MicroTelnet 
 (for feedback, issues discussion, and your pull requests))
+
+
 
 
 Good luck! 
