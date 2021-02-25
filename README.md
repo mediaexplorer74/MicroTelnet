@@ -28,7 +28,7 @@ XapInst.bat  - "Telnet Injector" :)
 copy \data\users\public\xaps\xapinst.bat \data\test\bin\
 
 
-B. FrontEnd
+B. FRONTEND
 -----------
 "Binaries - PC" folder -- assembled installer for your Win10-based PC
 "Binaries - WM" folder -- assembled installer for your Win10Mobele-based phone device :)
