@@ -9,6 +9,7 @@
 
 My TELNET Injector "solution" consists of 2 parts:
 A. Backend
+
 B. Frontend
 
 
@@ -31,11 +32,13 @@ copy \data\users\public\xaps\xapinst.bat \data\test\bin\
 
 B. FRONTEND
 -----------
-"Binaries - PC" folder -- assembled installer for your Win10-based PC
-"Binaries - WM" folder -- assembled installer for your Win10Mobele-based phone device :)
 MicroTelnet folder -- open-sourced UWP app for XAP installation experiments (use it free for your own RnD))
+Feel free to try assemble binaries (appxbundle packages) for x86 and ARM targets
 
 Problems: Mobile version of MicroTelnet cannot connect to localhost :( 
+
+PC version WORKS (see my 4 screenshots)... but XAP sync between PC and Winphone NOT realized now :)
+ 
 Please, help (if You know Sockets, TCP Clients, etc.).
 Github repo here:
  https://github.com/mediaexplorer74/MicroTelnet 
