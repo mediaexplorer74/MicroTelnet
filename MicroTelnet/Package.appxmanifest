@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" xmlns:mobile="http://schemas.microsoft.com/appx/manifest/mobile/windows10" IgnorableNamespaces="uap mp uap4 iot uap3 uap2 mobile">
-  <Identity Name="1c12b3c8-b106-4fef-a704-ee3a0e8afa64" Publisher="CN=mediaexplorer" Version="1.0.1.0" />
+  <Identity Name="MicroTelnetPointZeroA" Publisher="CN=mediaexplorer" Version="1.0.2.0" />
   <mp:PhoneIdentity PhoneProductId="1c12b3c8-b106-4fef-a704-ee3a0e8afa64" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>MicroTelnet</DisplayName>
+    <DisplayName>MicroTelnet.PointZeroA</DisplayName>
     <PublisherDisplayName>mediaexplorer</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MicroTelnet.App">
-      <uap:VisualElements DisplayName="MicroTelnet" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MicroTelnet" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="MicroTelnet 1.0a" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MicroTelnet" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

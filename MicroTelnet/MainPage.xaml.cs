@@ -70,6 +70,7 @@ namespace MicroTelnet
         // Open Picker demo
         private async void openButton_Click(object sender, RoutedEventArgs e)
         {
+            string CorrectPath = ""; 
             FileOpenPicker openPicker = new FileOpenPicker();
             openPicker.ViewMode = PickerViewMode.Thumbnail;
             openPicker.SuggestedStartLocation = PickerLocationId.Desktop;
@@ -79,7 +80,15 @@ namespace MicroTelnet
 
             if (file != null)
             {
-                XapPathBox.Text = file.Path; 
+                CorrectPath = file.Path;
+
+                if (CorrectPath.StartsWith("C:\\"))
+                {
+
+                    CorrectPath = CorrectPath.Substring(3, CorrectPath.Length - 3);
+                }
+
+                XapPathBox.Text = CorrectPath; 
             }
         }
 

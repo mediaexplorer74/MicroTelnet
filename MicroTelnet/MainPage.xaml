@@ -19,9 +19,11 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
             <TextBlock x:Name="Label0" Margin="0,0,0,30" TextWrapping="Wrap">
+                
+                W10M XAPInst (microtelnet codename)  
                 Warning: XAP Path is "mobile path". 
                 XAP file must be located strongly on your mobile device. 
-                Don't use File Picker in PC version. PC-to-Mobile file transfer is not not ready!
+                Don't use File Picker in PC version. PC-to-Mobile file transfer is not not ready =)
             </TextBlock>
 
             <TextBlock x:Name="Label1">
@@ -33,7 +35,7 @@
                  Text= "\Data\Users\Public\XAPs\bb.xap"
                  BorderThickness="5"
                  HorizontalAlignment="Left"
-              
+                 FontSize="14"
              />
 
             <TextBlock x:Name="Label2">
