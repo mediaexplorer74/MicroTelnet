@@ -85,7 +85,7 @@ namespace MicroTelnet
                 if (CorrectPath.StartsWith("C:\\"))
                 {
 
-                    CorrectPath = CorrectPath.Substring(3, CorrectPath.Length - 3);
+                    CorrectPath = CorrectPath.Substring(2, CorrectPath.Length - 2);
                 }
 
                 XapPathBox.Text = CorrectPath; 
