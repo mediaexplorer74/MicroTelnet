@@ -5,8 +5,6 @@
     xmlns:local="using:MicroTelnet"
      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Height="600"
-    Width="350"
     mc:Ignorable="d"
     >
 
@@ -20,10 +18,8 @@
         <StackPanel>
             <TextBlock x:Name="Label0" Margin="0,0,0,30" TextWrapping="Wrap">
                 
-                W10M XAPInst (microtelnet codename)  
-                Warning: XAP Path is "mobile path". 
-                XAP file must be located strongly on your mobile device. 
-                Don't use File Picker in PC version. PC-to-Mobile file transfer is not not ready =)
+                XAPInst 1.0.6 alpha (microtelnet codename)  
+               
             </TextBlock>
 
             <TextBlock x:Name="Label1">
@@ -37,6 +33,9 @@
                  HorizontalAlignment="Left"
                  FontSize="14"
              />
+
+            <ToggleSwitch x:Name="toggleSwitch1" IsOn="False"
+        OnContent="Install on SD Card" OffContent="Install on SD Internal Storage" />
 
             <TextBlock x:Name="Label2">
                 Telnet IP (e.g. 192.168.1.33):
@@ -73,6 +72,7 @@
                       Background="Blue"
                       VerticalContentAlignment="Stretch"
                       VerticalAlignment="Stretch"
+                      HorizontalAlignment="Left"
                       Width="350"
                       Height="350"
              />

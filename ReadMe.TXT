@@ -1,10 +1,10 @@
-﻿"TELNET Injector" / XAPinst/ MicroTelnet 1.0alpha (Experimental Project for Microsoft Lumia 950)
+﻿XAPinst/ MicroTelnet 1.0.6 alpha (Experimental Project for Microsoft 10 Mobile)
 ================================================================
 
-MicroTelnet Win10Mobile app  is open-sourced UWP project.
-My main goal is to do useful GUI for mobile variant of XAP installation , without any PC ))
+"XAPinst" ("MicroTelnet") app  is open-sourced UWP project.
+My main goal is to do useful GUI for mobile variant of XAP installation , without any PC.
 
-My TELNET Injector "solution" consists of 2 parts:
+XAPinst solution consists of 2 parts:
 A. Backend
 B. Frontend
 
@@ -17,11 +17,11 @@ Quick notes:
 A. BACKEND
 ----------
 
-XapInst.bat  - "Telnet Injector" :)
+XapInst.bat  - "background xap installer" :)
 
 1) Full interop your W10M phone 
 2) Copy xapinst.bat to XAPs folder (full path is \data\users\public\xaps\ , on W10M)
-3) Use CMD Injector tech , i.e. use Putty and this command:
+3) Use CMD Injector tech (search it at "Windows 10 Mobile (Lumia)" group in Telegram), i.e. use Putty and this command:
 copy \data\users\public\xaps\xapinst.bat \data\test\bin\
 
 

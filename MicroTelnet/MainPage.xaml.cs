@@ -78,17 +78,36 @@ namespace MicroTelnet
             openPicker.FileTypeFilter.Add(".xap");
             var file = await openPicker.PickSingleFileAsync();
 
+            // check the file choosed or not
             if (file != null)
             {
-                CorrectPath = file.Path;
+                // TODO: filename's space optimization 
 
-                if (CorrectPath.StartsWith("C:\\"))
+
+                
+                string xapfilename = file.Path;
+                //SuperWriteLine("Original String: " + xapfilename);
+                string newxapfilename = xapfilename.Replace(" ", "");//тут удаление, точнее замена, не важно:)
+                //SuperWriteLine("Replaced String: " + newxapfilename);
+                XapPathBox.Text = newxapfilename; //file.Path; 
+
+                string xapshortfilename = file.Name;
+                //SuperWriteLine("Original String: " + xapshortfilename);
+                string newshortxapfilename = xapshortfilename.Replace(" ", "");//тут удаление, точнее замена, не важно:)
+                                                                               //SuperWriteLine("Replaced String: " + newshortxapfilename);
+
+                if (xapshortfilename != newshortxapfilename)
                 {
+                    // file rename operation
+                    await file.RenameAsync(newshortxapfilename);
 
-                    CorrectPath = CorrectPath.Substring(2, CorrectPath.Length - 2);
+                    // show result
+                    SuperWriteLine("file rename: " + xapshortfilename + "->" + newshortxapfilename);
                 }
 
-                XapPathBox.Text = CorrectPath; 
+               
+
+                XapPathBox.Text = newxapfilename; //file.Path; 
             }
         }
 
@@ -103,6 +122,8 @@ namespace MicroTelnet
         private async void StartDeploy_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder sb = new StringBuilder();
+            string Parameter1 = XapPathBox.Text; 
+            string Parameter2;
 
             string ipaddress = TelnetIP.Text;
 
@@ -146,6 +167,15 @@ namespace MicroTelnet
 
             // --2 --  
 
+            if (toggleSwitch1.IsOn)
+            {
+                Parameter2 = "1";
+            }
+            else
+            {
+                Parameter2 = "0";
+            }
+
             // send loginname
             //SendCmd(telnetClient, "Sirepuser");
 
@@ -162,7 +192,8 @@ namespace MicroTelnet
             // -- 3 --
 
             // install xap
-            SendCmd(telnetClient, "xapinst " + XapPathBox.Text  + "\r\n");
+            SendCmd(telnetClient, "xapinst " + Parameter1 + " " + Parameter2  + "\r\n");
+            SuperWriteLine("xapinst " + Parameter1 + " " + Parameter2);
 
             // DEBUG: get telnet echo
             SuperWriteLine(GetAnswer(telnetClient));
