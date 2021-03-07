@@ -16,15 +16,18 @@
     </Page.BottomAppBar>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <TextBlock x:Name="Label0" Margin="0,0,0,30" TextWrapping="Wrap">
+            <TextBlock x:Name="Label0_1" Margin="0,0,0,30" TextWrapping="Wrap" FontSize="24">
+                MicroTelnet 1.0.8-alpha 
+                           
+            </TextBlock>
+            <TextBlock x:Name="Label0_2" Margin="0,0,0,30" TextWrapping="Wrap">
                 
-                *** XAPInst 1.0.7 alpha (Microtelnet codename) 
-                *** CAUTION: please install cmd injector to work this app.
-               
+               CAUTION: please install cmd injector to work this app.
+             
             </TextBlock>
 
             <TextBlock x:Name="Label1">
-                FilePath (e.g. D:\test folder\aa bb.xap):
+                FilePath:
             </TextBlock>
             <TextBox x:Name="XapPathBox" 
                  Height="40" 
@@ -33,16 +36,17 @@
                  BorderThickness="5"
                  HorizontalAlignment="Left"
                  FontSize="14"
+                 PlaceholderText="C:\Data\Users\Public\Documents\Test.xap"
              />
 
             <TextBlock x:Name="Label2">
                 Install mode:
             </TextBlock>
-            <ToggleSwitch x:Name="toggleSwitch1" IsOn="False"
-         OffContent="Use Internal Storage (0)" OnContent="Use SD Card (1)"/>
+            <ToggleSwitch x:Name="toggleSwitch1" Toggled="toggleSwitch1_Toggled" IsOn="False"
+         OffContent="Use Internal Storage" OnContent="Use SD Card"/>
 
             <TextBlock x:Name="Label3">
-                Telnet IP (e.g. 192.168.1.33):
+                Telnet IP:
             </TextBlock>
 
 
@@ -78,7 +82,7 @@
                       VerticalContentAlignment="Stretch"
                       VerticalAlignment="Stretch"
                       HorizontalAlignment="Stretch"
-                      HorizontalContentAlignment="Stretch"
+                      HorizontalContentAlignment="Stretch" Margin="0,0,1150,0"
              />
 
 

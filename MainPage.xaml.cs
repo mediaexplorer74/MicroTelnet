@@ -86,10 +86,18 @@ namespace MicroTelnet
             // check the file choosed or not
             if (file != null)
             {
+                string text = file.Path;
+
+                
+                string newPath = text.Replace("&", "^&");
+                SuperWriteLine(newPath);
+
+
+
                 // fulfill filePath
-                XapPathBox.Text = file.Path; 
+                XapPathBox.Text = newPath; //file.Path; 
             }
-        }
+        }//openButton_Click end
 
         
         // Win10 <-> WM10 Path sync (NOT READY YET!)
@@ -211,6 +219,10 @@ namespace MicroTelnet
 
         }// StartDelpoy_Click end
 
+        private void toggleSwitch1_Toggled(object sender, RoutedEventArgs e)
+        {
+            //
+        }
 
     }// class end
 
